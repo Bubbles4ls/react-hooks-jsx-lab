@@ -1,20 +1,13 @@
 import React from "react";
 import { name, city } from "../data/data.js";
-import "./index.js";
 
 
-const divStyle = {
-  color: 'firebrick',
-};
 
 function Home() {
-  <div id ="home" >
-      <h1>
-     
-      `${name} is a Web Developer from ${city}`
-      </h1>
-  </div>
-  return <div style ={ divStyle} >Home</div>;
+  // update the JSX being returned!
+  return <div id="home">
+          <h1 style={{ color: "firebrick" }}>{ name } is a Web Developer from { city }</h1>
+        </div>;
 }
 
 export default Home;
